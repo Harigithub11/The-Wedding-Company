@@ -1,1 +1,0 @@
-- do not add useless files like testing files, do not add security related key like api key, write a good commit message while committing to git in points
