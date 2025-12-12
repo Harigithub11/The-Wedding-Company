@@ -131,10 +131,9 @@ async def root():
     }
 
 
-# TODO: Include routers here when implemented
-# from app.routers import organization, admin
-# app.include_router(organization.router, prefix="/org", tags=["Organizations"])
-# app.include_router(admin.router, prefix="/admin", tags=["Admin"])
+# Include routers
+from app.routers.organization_router import router as organization_router
+app.include_router(organization_router)
 
 
 if __name__ == "__main__":

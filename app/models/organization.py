@@ -51,7 +51,7 @@ class OrganizationModel:
             organization_doc = {
                 "organization_name": organization_name,
                 "collection_name": collection_name,
-                "admin_id": ObjectId(admin_id),
+                "admin_id": ObjectId(admin_id) if admin_id else None,
                 "created_at": datetime.utcnow(),
                 "updated_at": datetime.utcnow(),
                 "status": "active"
