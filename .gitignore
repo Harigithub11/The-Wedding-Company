@@ -1,9 +1,14 @@
+# ============================================
 # Python
+# ============================================
 __pycache__/
 *.py[cod]
+*.pyo
 *$py.class
 *.so
 .Python
+
+# Build artifacts
 build/
 develop-eggs/
 dist/
@@ -23,59 +28,106 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment
+# ============================================
+# Virtual Environments
+# ============================================
 venv/
 env/
 ENV/
 env.bak/
 venv.bak/
+.venv/
 
+# ============================================
+# IDE & Editors
+# ============================================
 # PyCharm
 .idea/
 
 # VS Code
 .vscode/
 
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
 # Environment Variables
+# ============================================
 .env
 .env.local
 .env.*.local
 
+# ============================================
 # Database
+# ============================================
 *.db
 *.sqlite3
 
-# Logs
+# ============================================
+# Logs & Temporary Files
+# ============================================
 *.log
+*.tmp
 logs/
 
-# OS
+# ============================================
+# Operating System
+# ============================================
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
 
-# Testing
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================
+# Testing & Coverage
+# ============================================
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 .tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
 
-# MyPy
+# ============================================
+# Type Checking
+# ============================================
 .mypy_cache/
 .dmypy.json
 dmypy.json
+.pyre/
+.pytype/
 
+# ============================================
 # Jupyter Notebook
+# ============================================
 .ipynb_checkpoints
 
-# pyenv
+# ============================================
+# Python Version Management
+# ============================================
 .python-version
 
-# Backup files
-*~
+# ============================================
+# Backup & Swap Files
+# ============================================
 *.bak
 *.swp
 *.swo
 
+# ============================================
 # MongoDB
+# ============================================
 data/
 dump/
